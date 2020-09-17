@@ -1,0 +1,39 @@
+{
+  "name": "vscode-ts-debug",
+  "version": "1.0.0",
+  "description": "fucking sourcemaps and breakpoints!",
+  "author": "ilan@spikedata.co.za",
+  "license": "UNLICENSED",
+  "repository": "https://github.com/spikedata/vscode-ts-debug",
+  "main": "build/main/src/index.js",
+  "typings": "build/main/src/index.d.ts",
+  "xtype": "module",
+  "xmodule": "build/module/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./build/module/src/index.mjs",
+      "require": "./build/main/src/index.js"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "reset": "./scripts/workspace/reset.sh",
+    "fix": "./scripts/workspace/fix-all.sh",
+    "build": "./scripts/workspace/build-all.sh",
+    "build-libs": "./scripts/workspace/build-libs.sh",
+    "test": "./scripts/workspace/test-all.sh"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.3",
+    "jscodeshift": "^0.9.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "ts-node": "^8.8.2",
+    "typescript": "^4.0.2"
+  }
+}
