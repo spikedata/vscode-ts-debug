@@ -17,11 +17,7 @@
   },
   "sideEffects": false,
   "scripts": {
-    "reset": "./scripts/workspace/reset.sh",
-    "fix": "./scripts/workspace/fix-all.sh",
-    "build": "./scripts/workspace/build-all.sh",
-    "build-libs": "./scripts/workspace/build-libs.sh",
-    "test": "./scripts/workspace/test-all.sh"
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/node": "^14.0.1",

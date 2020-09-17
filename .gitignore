@@ -1,13 +1,2 @@
 node_modules
 build
-**/dist/*
-!stack/app.spikedata.co.za/dist/rsync-exclude.txt
-!stack/app.spikedata.co.za/dist/start.js
-!stack/banksy-gateway/dist/app.js
-!stack/banksy-gateway/dist/rsync-exclude.txt
-!stack/banksy-gateway/dist/start.js
-coverage
-.nyc_output
-*.log
-
-stack/lambda-spike-pdf
